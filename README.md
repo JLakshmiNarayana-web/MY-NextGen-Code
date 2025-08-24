@@ -35,6 +35,6 @@ Focused on building scalable web apps and AI-powered IoT solutions.
 
 - Email: [janjamlakshminarayana@gmail.com](mailto:janjamlakshminarayana@gmail.com)  
 - LinkedIn: [My LinkedIn Profile]
-(https://linkedin.com/in/janjam-lakshmi-narayana-a4a0b0315) Portfolio:(https://jlakshminarayana-web.github.io/MY-NextGen-Code/) [https://jlakshminarayana-web.github.io/AI-TECH-BUSINESS/]
+(https://linkedin.com/in/janjam-lakshmi-narayana-a4a0b0315) -Portfolio:(https://jlakshminarayana-web.github.io/MY-NextGen-Code/) [https://jlakshminarayana-web.github.io/AI-TECH-BUSINESS/]
 
 
