@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Nunito";
+}
+
+:root{
+    --first-bg-color: #191f36;
+    --second-bg-color: #262b40;
+    --text-color: #fff;
+    --btn-color: #59b2f4;
+}
+
+.header{
+    background-color: var(--first-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    z-index: 1;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header a{
+    color: var(--text-color);
+}
+
+.logo{
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: default;
+}
+
+.navbar{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.navbar a:hover{
+    color: var(--btn-color);
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 10% 4rem;
+}
+
+.home{
+    margin-top: 4rem;
+    padding-bottom: 9rem;
+    background-color: var(--first-bg-color);
+    color: var(--text-color);
+}
+
+.home-img img{
+    height: 45vh;
+    width: 20vw;
+    border-radius: 50%;
+    animation: FloatImage 3s ease-in-out infinite;
+}
+
+@keyframes FloatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2rem);
+    }
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 2rem var(--btn-color);
+}
+
+.home-content h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.home-content h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.home-content h2 span{
+    color: var(--btn-color);
+}
+
+.home-content p{
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.social{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.social a{
+    border: 0.2rem solid var(--btn-color);
+    padding: 0.7rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    color: var(--btn-color);
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.3rem;
+    display: flex;
+    
+}
+
+.social a:hover{
+    background-color: var(--btn-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--btn-color);
+}
+
+/* .social a i{
+    font-weight: 900;
+    color: var(--btn-color);
+} */
+
+.social a i:hover{
+    color: var(--second-bg-color);
+}
+
+.btn{
+    background-color: var(--btn-color);
+    padding: 0.7rem 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem var(--btn-color);
+    font-weight: 600;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+
+.about{
+    background-color: var(--second-bg-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7rem;
+}
+
+.about-img img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+    border: 2px solid var(--btn-color);
+    padding: 0.4rem;
+}
+
+.about-content{
+    color: var(--text-color);
+}
+
+.about-content h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.about-content h1 span{
+    color: var(--btn-color);
+}
+
+.about-content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.3rem 0;
+}
+
+.about-content p{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--first-bg-color);
+    color: var(--text-color);
+}
+
+.heading{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.heading span{
+    color: var(--btn-color);
+}
+
+.services-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.services-items{
+    text-align: center;
+    background-color: var(--second-bg-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.services-items:hover{
+    outline: 2px solid var(--btn-color);
+    transform: scale(1.2);
+    transition-duration: 2s;
+}
+
+.services-items i{
+    font-size: 3rem;
+    color: var(--btn-color);
+}
+
+.services-items h2{
+    margin: 1rem 0;
+}
+
+.services-items p{
+    margin-bottom: 2rem;
+}
+
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--first-bg-color);
+    color: var(--text-color);
+}
+
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10rem;
+}
+
+.bars{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+
+.light-bar{
+    position: absolute;
+    bottom: 0;
+    height: 0.5rem;
+    background-color: var(--text-color);
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.btn-bar{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--btn-color);
+    height: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.bars h3{
+    font-size: 0.9rem;
+}
+
+.bars span{
+    font-size: 0.9rem;
+    color: var(--btn-color);
+}
+
+.btn-python, .btn-sql{
+    width: 90%;
+}
+
+.btn-django, .btn-tailwind{
+    width: 80%;
+}
+
+.btn-c{
+    width: 85%;
+}
+
+.btn-html, .btn-css{
+    width: 95%;
+}
+
+.btn-js{
+    width: 75%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--first-bg-color);
+    color: var(--text-color);
+}
+
+form{
+    margin: 0 auto;
+    width: 65%;
+    text-align: center;
+}
+
+.box-1 input, .box-2 input{
+    background-color: var(--second-bg-color);
+    padding: 1rem;
+    width: 49%;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    background-color: var(--second-bg-color);
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    resize: none;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+
+footer{
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.footer-icon a{
+    background-color: var(--btn-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.footer-icon a i{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 900;
+}
